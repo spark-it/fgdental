@@ -1,0 +1,14 @@
+name = Appearance
+description = Configurações de tema.
+core = 7.x
+package = Fisqua - Features Pack
+version = 7.x-1.0
+dependencies[] = core
+features[ctools][] = strongarm:strongarm:1
+features[features_api][] = api:2
+features[variable][] = admin_theme
+features[variable][] = theme_default
+features[variable][] = theme_seven_settings
+features_exclude[dependencies][ctools] = ctools
+features_exclude[dependencies][strongarm] = strongarm
+project path = sites/default/modules/features
