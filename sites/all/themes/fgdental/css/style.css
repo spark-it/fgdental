@@ -5,3 +5,37 @@
   background-color: transparent;
   border: none;
 }
+.navbar-default .navbar-nav > li > a {
+  font-size: 16px;
+}
+.navbar-default .navbar-nav > li > a:hover {
+  color: grey;
+  border-bottom: 2px #ff9a2e solid;
+}
+.navbar-nav {
+  float: right;
+  margin-right: 50px;
+}
+.region-footer > section {
+  display: inline-block;
+  vertical-align: top;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+#footer-style {
+  background: #393939;
+  border-bottom: 5px solid #ffa151;
+}
+.footer {
+  border: none;
+  color: white;
+}
+.region-footer .block-title {
+  font-size: 23px;
+}
+.btn-primary {
+  background-color: #ff6c05
+}
+.btn-primary:hover {
+  background-color: #ff9a2e;
+}
