@@ -73,6 +73,13 @@
  * @ingroup templates
  */
 ?>
+<header role="banner" id="page-header">
+  <?php if (!empty($site_slogan)): ?>
+    <p class="lead"><?php print $site_slogan; ?></p>
+  <?php endif; ?>
+
+  <?php print render($page['header']); ?>
+</header> <!-- /#page-header -->
 <header id="navbar" role="banner" class="<?php print $navbar_classes; ?>">
   <div class="<?php print $container_class; ?>">
     <div class="navbar-header">
@@ -113,16 +120,12 @@
     <?php endif; ?>
   </div>
 </header>
-
+<div class="bread-container">
+  <div class="container">
+  <?php if (!empty($breadcrumb)): print $breadcrumb; endif;?>
+  </div>
+</div>
 <div class="main-container <?php print $container_class; ?>">
-
-  <header role="banner" id="page-header">
-    <?php if (!empty($site_slogan)): ?>
-      <p class="lead"><?php print $site_slogan; ?></p>
-    <?php endif; ?>
-
-    <?php print render($page['header']); ?>
-  </header> <!-- /#page-header -->
 
   <div class="row">
 
@@ -136,7 +139,6 @@
       <?php if (!empty($page['highlighted'])): ?>
         <div class="highlighted jumbotron"><?php print render($page['highlighted']); ?></div>
       <?php endif; ?>
-      <?php if (!empty($breadcrumb)): print $breadcrumb; endif;?>
       <a id="main-content"></a>
       <?php print render($title_prefix); ?>
       <?php if (!empty($title)): ?>
