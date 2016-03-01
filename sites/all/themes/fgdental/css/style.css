@@ -338,3 +338,26 @@ font-weight: bold;
 .node-type-novidades .node-novidades h2{
   display: none;
 }
+.date-in-parts span {
+  display: block;
+  width: 36px;
+  font-style: normal;
+  text-align: center;
+}
+.date-in-parts .day {
+  padding: 6px;
+  color: grey;
+  background: #f5f5f5;
+}
+.node-novidades.node-teaser .field-name-field-imagem {
+  margin-bottom: 20px;
+}
+.node-novidades.node-teaser .content h2, .node-novidades.node-teaser .content .submitted {
+  display: inline-block;
+  vertical-align: top;
+  margin: 0;
+}
+.date-in-parts .month {
+  background: orange;
+  color: white;
+}

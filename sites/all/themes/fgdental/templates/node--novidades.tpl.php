@@ -95,7 +95,9 @@
       // We hide the comments and links now so that we can render them later.
       hide($content['comments']);
       hide($content['links']);
+
       print render($content['field_imagem']); ?>
+      <div class="col col-lg-2" >
       <?php if ($display_submitted): ?>
         <div class="submitted">
             <div class="date-in-parts">
@@ -104,6 +106,8 @@
             </div>
         </div>
       <?php endif; ?>
+      </div>
+      <div class="col col-lg-10" >
       <?php if ($teaser): ?>
           <h2<?php print $title_attributes; ?>><a href="<?php print $node_url; ?>"><?php print $title; ?></a></h2>
         <?php endif; ?>
@@ -111,8 +115,10 @@
       print render($content['body']);
       print render($content['field_tag']);
     ?>
+    <?php print render($content['links']); ?>
+    </div>
   </div>
-  <?php print render($content['links']); ?>
+
 
   <?php print render($content['comments']); ?>
 
