@@ -1,5 +1,7 @@
 /* icones fontawesome */
  @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css');
+/* open sans */
+ @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,700);
 
  /* navbar */
 .navbar, .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover{
@@ -156,7 +158,12 @@
 }
 
 /* general */
-
+body {
+  font-family: 'Open Sans', Helvetica;
+}
+img.pull-left {
+  margin: 0 30px 30px 0;
+}
 #page-header {
   background-color: #ffa151;
   text-align: center;
@@ -224,10 +231,17 @@ a {
 .btn-produtos {
   background: white;
   color: grey;
-  border: 3px solid orange;
+  border: 3px solid #f47c3c;
+}
+.btn-produtos:hover {
+  background: #f47c3c;
+  color: white;
 }
 #block-views-produtos-block-1 .view-footer {
   text-align: center;
+}
+.view-fotos-produto .views-field-field-fotos-1 .img-responsive{
+  display: inline;
 }
 /* pagina produto */
 .node-type-produto .field-name-field-preco {
@@ -241,4 +255,86 @@ font-weight: bold;
 }
 .node-type-produto .field-name-field-fotos .field-item:first-child {
   margin-left: 0;
+}
+.produtos-relacionados {
+  border: 1px solid #cccccc;
+  border-top: 4px solid orange;
+  padding: 10px 20px 20px 20px;
+}
+.produtos-relacionados .block-title {
+  font-size: 20px;
+  color: #666666;
+  margin-bottom: 15px;
+}
+.produtos-relacionados .media {
+    margin-top: 25px;
+}
+/* home */
+.bemvindo {
+  font-weight: lighter;
+}
+.bemvindo u {
+  text-decoration: none;
+  font-size: 60px;
+}
+.front .region-content .block-title {
+  color: #bebfc1;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 60px;
+}
+.front .region-content .block-title::after, .bemvindo u::after {
+  display: block;
+  width: 120px; height: 4px;
+  background: orange;
+  content: "";
+  margin: 10px auto;
+}
+.bemvindo u::after {
+  width: 300px;
+  height: 2px;
+  margin: 0 auto;
+}
+.front .main-container .block {
+  margin: 100px 0;
+}
+.front #block-system-main {
+  display: none;
+}
+
+/* novidades */
+.view-novidades article header{
+  display: none;;
+}
+.view-novidades .thumbnail {
+  padding: 5; border: none;
+}
+.view-novidades .thumbnail img {
+  width: 100%; height: auto;
+}
+.view-novidades h2 {
+  font-weight: bold;
+  font-size: 25px;
+}
+.field-name-field-tag {
+  float: left;
+}
+.view-id-novidades ul.links {
+  float: right;
+}
+.field-name-field-tag .field-item {
+  margin: 10px;
+}
+.field-name-field-tag .field-items > * {
+  display: inline-block;
+}
+.field-name-field-tag .field-item::before {
+  content: "\f02b";
+  font-size: 11em;
+  font: normal normal normal 14px/1 FontAwesome;
+  padding: 0 10px 0 0;
+  color: #aaaaaa;
+}
+.node-type-novidades .node-novidades h2{
+  display: none;
 }
