@@ -219,7 +219,7 @@ $databases = array (
     array (
       'database' => 'fgdental',
       'username' => 'root',
-      'password' => '',
+      'password' => 'nGEqwY3Upo',
       'host' => 'localhost',
       'port' => '',
       'driver' => 'mysql',
